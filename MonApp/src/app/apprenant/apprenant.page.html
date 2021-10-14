@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>apprenant</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-card-content *ngIf="listeApprenant">
+  <ion-item *ngFor="let p of listeApprenant">
+    <ion-label> {{p.prenom}}</ion-label>
+    <ion-label> {{p.nom}}</ion-label>
+  </ion-item>
+</ion-card-content>
+</ion-content>
